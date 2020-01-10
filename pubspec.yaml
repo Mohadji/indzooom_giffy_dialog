@@ -1,0 +1,20 @@
+name: indzooom_giffy_dialog
+description: A Flutter package for a quick, handy and beautiful giffy dialog width description as a widget.
+version: 1.6.2
+author: Giuliano Jordao
+homepage: https://github.com/giulianojordao/indzooom_giffy_dialog
+
+environment:
+  sdk: ">=2.2.2 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flare_flutter: ^1.7.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  image_test_utils: ^1.0.0
+
+flutter:
