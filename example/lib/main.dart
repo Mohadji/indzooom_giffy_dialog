@@ -131,6 +131,51 @@ class MyHomePage extends StatelessWidget {
                             onOkButtonPressed: () {},
                           ));
                 }),
+            RaisedButton(
+                key: keys[4],
+                color: Colors.teal,
+                child: Text(
+                  'Prompt Asset Giffy',
+                  style: TextStyle(
+                    color: Colors.white,
+                  ),
+                ),
+                onPressed: () {
+                  showDialog(
+                      context: context,
+                      builder: (_) => AssetGiffyDialog(
+                            key: keys[5],
+                            image: Image.asset(
+                              'assets/men_wearing_jacket.gif',
+                              fit: BoxFit.cover,
+                            ),
+                            title: Text(
+                              'Men Wearing Jackets',
+                              textAlign: TextAlign.center,
+                              style: TextStyle(
+                                  fontSize: 22.0, fontWeight: FontWeight.w600),
+                            ),
+                            entryAnimation: EntryAnimation.BOTTOM_RIGHT,
+                            description: 
+                            Column(
+                              children: <Widget>[
+                                Text(
+                                  'Please inform your email address.',
+                                  textAlign: TextAlign.center,
+                                  style: TextStyle(),
+                                ),
+                                TextField(
+                                  controller: new TextEditingController(),
+                                  decoration: InputDecoration(
+                                    
+                                  ),
+
+                                ),
+                              ],
+                            ),
+                            onOkButtonPressed: () {},
+                          ));
+                }),
           ],
         ),
       ),
